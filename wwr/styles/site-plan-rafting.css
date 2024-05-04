@@ -1,0 +1,61 @@
+/* site-plan-rafting.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent-color: #a43312;
+    --additional-accent-color: #381d2a;
+    --heading-font: 'Ubuntu', sans-serif;
+    --paragraph-font: 'Ubuntu', sans-serif;
+    --navigation-bg-color: #fff; /* Navigation background color */
+    --navigation-link-color: #333; /* Navigation link color */
+    --navigation-hover-link-color: #666; /* Navigation hover link color */
+    --navigation-hover-bg-color: #f0f0f0; /* Navigation hover background color */
+}
+
+/* Body */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+/* Grouping Selector for Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color); /* You can change this color to your preferred choice */
+}
+
+/* Header Styling */
+header {
+    padding: 20px;
+    background-color: var(--secondary-color); /* Using the selected secondary color */
+}
+
+/* Paragraph Styling */
+p {
+    padding-bottom: 15px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: var(--navigation-bg-color); /* Set background color */
+    padding: 10px; /* Add padding */
+}
+
+/* Navigation Link Styling */
+nav a {
+    color: var(--navigation-link-color); /* Set link color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 20px; /* Add right margin for spacing */
+}
+
+/* Navigation Link Hover Styling */
+nav a:hover {
+    color: var(--navigation-hover-link-color); /* Change link color on hover */
+    background-color: var(--navigation-hover-bg-color); /* Add background color on hover */
+}
