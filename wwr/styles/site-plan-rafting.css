@@ -1,9 +1,6 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
-/* Import External CSS */
-@import url('styles.css');
-
 /* CSS Variables */
 :root {
     --primary-color: #396e94;
