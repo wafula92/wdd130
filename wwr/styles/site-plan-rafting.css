@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 /* Import External CSS */
-@import url('styles/styles.css');
+@import url('/wwr/styles/site-plan-rafting.css');
 
 /* CSS Variables */
 :root {
