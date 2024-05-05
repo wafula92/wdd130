@@ -50,15 +50,28 @@ nav {
     padding: 10px;
 }
 
-/* Navigation Link Rules */
-nav a {
-    color: var(--nav-link-color);
-    text-decoration: none;
-    margin-right: 20px;
+/* Navigation Styling */
+nav {
+    /* Your styles for the navigation */
 }
 
-/* Navigation Link Hover Rules */
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+/* Navigation Link Styling */
+nav a {
+    /* Your styles for the navigation links */
 }
+
+/* Navigation Link: Unvisited Styling */
+nav a:link {
+    /* Your styles for unvisited navigation links */
+}
+
+/* Navigation Link: Visited Styling */
+nav a:visited {
+    /* Your styles for visited navigation links */
+}
+
+/* Navigation Link: Hover Styling */
+nav a:hover {
+    /* Your styles for hover state of navigation links */
+}
+
