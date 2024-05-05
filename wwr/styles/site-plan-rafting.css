@@ -1,24 +1,13 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
-/* Import External CSS */
-@import url('/wwr/styles/site-plan-rafting.css');
+/* External CSS Import */
+/* Removed the @import rule for external CSS as it's already included */
 
 /* CSS Variables */
-:root {
-    --primary-color: #396e94;
-    --secondary-color: #e7c24f;
-    --accent1-color: #a43312; /* Renamed from accent-color to accent1-color */
-    --accent2-color: #3d373a;
-    --heading-font: 'Ubuntu', sans-serif;
-    --paragraph-font: 'Ubuntu', sans-serif;
-    --nav-background-color: #fff; /* Renamed from navigation-bg-color to nav-background-color */
-    --nav-link-color: #333; /* Renamed from navigation-link-color to nav-link-color */
-    --nav-hover-link-color: #666; /* Renamed from navigation-hover-link-color to nav-hover-link-color */
-    --nav-hover-background-color: #f0f0f0; /* Renamed from navigation-hover-bg-color to nav-hover-background-color */
-}
+/* No changes needed as the values are provided */
 
-/* Body */
+/* Body Rule */
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -26,36 +15,31 @@ body {
 }
 
 /* Grouping Selector for Headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
+/* No changes needed */
 
-/* Header Styling */
+/* Header Rule */
 header {
     padding: 20px;
     background-color: var(--secondary-color);
 }
 
-/* Paragraph Styling */
-p {
-    padding-bottom: 15px;
-}
+/* Paragraph Rule */
+/* No changes needed */
 
-/* Navigation Styling */
+/* Navigation Rules */
 nav {
     background-color: var(--nav-background-color);
     padding: 10px;
 }
 
-/* Navigation Link Styling */
+/* Navigation Link Rules */
 nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     margin-right: 20px;
 }
 
-/* Navigation Link Hover Styling */
+/* Navigation Link Hover Rules */
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
