@@ -26,8 +26,14 @@ body {
     padding: 20px;
 }
 
-/* Grouping Selector for Headings */
-/* No changes needed */
+/* Headings Grouped */
+h1, h2, h3, h4, h5, h6 {
+    /* Your common styles for all heading elements */
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    /* Add any additional styles you want to apply to all headings */
+}
+
 
 /* Header Rule */
 header {
