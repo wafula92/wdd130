@@ -5,7 +5,19 @@
 /* Removed the @import rule for external CSS as it's already included */
 
 /* CSS Variables */
-/* No changes needed as the values are provided */
+:root {
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312; 
+    --accent2-color: #3d373a;
+    --heading-font: 'Ubuntu', sans-serif;
+    --paragraph-font: 'Ubuntu', sans-serif;
+    --nav-background-color: #fff; 
+    --nav-link-color: #333; 
+    --nav-hover-link-color: #666; 
+    --nav-hover-background-color: #f0f0f0; 
+}
+
 
 /* Body Rule */
 body {
