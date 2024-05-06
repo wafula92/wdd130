@@ -4,8 +4,8 @@
     /* Color variables */
     --primary-color: #3A5775; /* Dark Slate Blue */
     --secondary-color: #6CA2B8; /* Cadet Blue */
-    --accent-color: #FFB74D; /* Amber */
-    --additional-accent-color: #F9ED69; /* Maximum Yellow Red */
+    --accent1-color: #FFB74D; /* Amber */
+    --accent2-color: #F9ED69; /* Maximum Yellow Red */
 
     /* Font variables */
     --heading-font: 'Oswald', sans-serif;
@@ -15,8 +15,9 @@
     --nav-background-color: #3A5775; /* Dark Slate Blue */
     --nav-link-color: #FFFFFF; /* White */
     --nav-hover-link-color: #FFB74D; /* Amber */
-    --nav-hover-bg-color: #6CA2B8; /* Cadet Blue */
+    --nav-hover-background-color: #6CA2B8; /* Cadet Blue */
 }
+
 
 body {
     font-family: var(--paragraph-font);
