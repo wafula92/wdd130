@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 :root {
+    /* Color variables */
     --primary-color: #3A5775; /* Dark Slate Blue */
     --secondary-color: #6CA2B8; /* Cadet Blue */
     --accent-color: #FFB74D; /* Amber */
     --additional-accent-color: #F9ED69; /* Maximum Yellow Red */
 
+    /* Font variables */
     --heading-font: 'Oswald', sans-serif;
     --paragraph-font: 'Open Sans', sans-serif;
 
-    --nav-background-color: #3A5775;
-    --nav-link-color: #FFFFFF;
-    --nav-hover-link-color: #FFB74D;
-    --nav-hover-bg-color: #6CA2B8;
+    /* Navigation variables */
+    --nav-background-color: #3A5775; /* Dark Slate Blue */
+    --nav-link-color: #FFFFFF; /* White */
+    --nav-hover-link-color: #FFB74D; /* Amber */
+    --nav-hover-bg-color: #6CA2B8; /* Cadet Blue */
 }
 
 body {
@@ -21,34 +24,35 @@ body {
     padding: 20px;
 }
 
+/* Grouping selector for headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+    font-family: var(--heading-font); /* Set font-family to the CSS variable for heading-font */
+    color: var(--primary-color); /* Set color to the primary color of your choice */
 }
 
 header {
-    padding: 20px;
-    background-color: var(--secondary-color);
+    padding: 20px; /* Set padding around the header */
+    background-color: var(--secondary-color); /* Set background color using the selected color scheme */
 }
 
 p {
-    padding: 25px 0;
+    padding: 25px 0; /* Set padding to 25 pixels on the top and bottom, and 0 pixels on the left and right */
 }
 
 nav {
-    background-color: var(--nav-background-color);
-    padding: 10px;
+    background-color: var(--nav-background-color); /* Set background color for the navigation */
+    padding: 10px; /* Add padding to the navigation */
 }
 
 nav a {
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 8px 15px;
-    margin: 0 5px;
-    border-radius: 5px;
+    color: var(--nav-link-color); /* Set color for navigation links */
+    text-decoration: none; /* Remove default underline from links */
+    padding: 8px 15px; /* Add padding to links */
+    margin: 0 5px; /* Add margin to separate links */
+    border-radius: 5px; /* Add border radius to create rounded corners */
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-bg-color);
+    color: var(--nav-hover-link-color); /* Change color on hover */
+    background-color: var(--nav-hover-bg-color); /* Change background color on hover */
 }
