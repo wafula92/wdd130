@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #3A5775; /* Dark Slate Blue */
+    --secondary-color: #6CA2B8; /* Cadet Blue */
+    --accent-color: #FFB74D; /* Amber */
+    --additional-accent-color: #F9ED69; /* Maximum Yellow Red */
+
+    --heading-font: 'Oswald', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+
+    --nav-background-color: #3A5775;
+    --nav-link-color: #FFFFFF;
+    --nav-hover-link-color: #FFB74D;
+    --nav-hover-bg-color: #6CA2B8;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+p {
+    padding: 25px 0;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-bg-color);
+}
