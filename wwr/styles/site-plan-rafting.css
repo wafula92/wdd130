@@ -40,20 +40,34 @@ p {
     padding: 25px 0; /* Set padding to 25 pixels on the top and bottom, and 0 pixels on the left and right */
 }
 
+/* Navigation */
 nav {
-    background-color: var(--nav-background-color); /* Set background color for the navigation */
-    padding: 10px; /* Add padding to the navigation */
+    background-color: var(--nav-background-color);
+    padding: 10px;
 }
 
+/* Navigation links */
 nav a {
-    color: var(--nav-link-color); /* Set color for navigation links */
-    text-decoration: none; /* Remove default underline from links */
-    padding: 8px 15px; /* Add padding to links */
-    margin: 0 5px; /* Add margin to separate links */
-    border-radius: 5px; /* Add border radius to create rounded corners */
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
 }
 
-nav a:hover {
-    color: var(--nav-hover-link-color); /* Change color on hover */
-    background-color: var(--nav-hover-bg-color); /* Change background color on hover */
+/* Navigation link - Unvisited */
+nav a:link {
+    color: var(--nav-link-color);
 }
+
+/* Navigation link - Visited */
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+/* Navigation link - Hover */
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
