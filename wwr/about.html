@@ -4,123 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Rafting Company</title>
-    <style>
-        /* CSS code */
-        :root {
-            --primary-color: #336699; /* Example primary color */
-            --secondary-color: #FFA500; /* Example secondary color */
-            --text-color: #333; /* Example text color */
-            --font-family: 'Roboto', sans-serif; /* Changed font family */
-        }
-
-        /* Apply font family */
-        body {
-            font-family: var(--font-family);
-        }
-
-        /* Styling headings */
-        h1, h2, h3, h4, h5, h6 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        /* Styling paragraphs */
-        p {
-            color: var(--text-color);
-            line-height: 1.5;
-        }
-
-        /* Styling links */
-        a {
-            text-decoration: none; /* Remove underlines */
-            color: var(--primary-color);
-        }
-
-        /* Limit entire width of the page */
-        .container {
-            max-width: 1200px; /* Adjust as needed */
-            margin: 0 auto; /* Center content */
-        }
-
-        /* Style the hero container */
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 400px; /* Set a fixed height for the hero section */
-        }
-
-        /* Style the hero image */
-        .hero img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        /* Position the h1 and article elements */
-        .hero h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white; /* Example text color */
-            text-align: center; /* Center align text */
-        }
-
-        .hero article {
-            position: absolute;
-            bottom: 20px; /* Adjust as needed */
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.8); /* Example background color with opacity */
-            padding: 20px; /* Adjust as needed */
-            color: white; /* Example text color */
-            max-width: 80%; /* Adjust as needed */
-        }
-
-        /* Style the image inside the article */
-        .hero article img {
-            float: right;
-            margin-left: 20px; /* Add some space between the image and paragraph */
-        }
-
-        /* Add styles for social media links */
-        footer a {
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
 
-<header>
-    <img src="images/rafting-momentum.jpg" alt="Rafting Company Logo">
-    <nav>
-        <a href="https://wafula92.github.io/wdd130/">Home</a>
-        <a href="https://wafula92.github.io/wdd130/wwr/about.html">About</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<header class="header">
+    <div class="header-container container">
+        <img class="logo" src="images/rafting-momentum.jpg" alt="Rafting Company Logo">
+        <nav class="nav">
+            <a href="https://wafula92.github.io/wdd130/">Home</a>
+            <a href="https://wafula92.github.io/wdd130/wwr/about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <main>
-    <div class="container hero">
-        <img src="images/hero_image.jpeg" alt="Rafting Adventure">
-        <h1>Rafting Adventures</h1>
-    </div>
-    <article>
-        <img src="images/happy_customer.jpeg" alt="Happy Customer">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit rhoncus magna at tempor. Vestibulum et tellus ornare, tristique massa nec, congue libero.</p>
-    </article>
-    <section>
-        <h2>History</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit rhoncus magna at tempor. Vestibulum et tellus ornare, tristique massa nec, congue libero.</p>
-    </section>
-    <section>
+    <section class="adventures-section container">
         <h2>Adventure Awaits You!</h2>
-        <img src="images/1.jpeg" alt="Rafting Adventure">
-        <img src="images/2.jpg" alt="Rafting Adventure">
-        <img src="images/3.jpg" alt="Rafting Adventure">
-        <img src="images/4.jpeg" alt="Rafting Adventure">
-        <img src="images/5.jpeg" alt="Rafting Adventure">
+        <div class="adventures-container">
+            <figure>
+                <img src="images/1.jpeg" alt="Rafting Adventure">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/2.jpg" alt="Rafting Adventure">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/3.jpg" alt="Rafting Adventure">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/4.jpeg" alt="Rafting Adventure">
+                <figcaption>Raging Rapids</figcaption>
+            </figure>
+            <figure>
+                <img src="images/5.jpeg" alt="Rafting Adventure">
+                <figcaption>Wild Waters</figcaption>
+            </figure>
+        </div>
     </section>
 </main>
 

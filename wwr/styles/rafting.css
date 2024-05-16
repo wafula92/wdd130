@@ -1,3 +1,5 @@
+/* CSS code */
+
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
@@ -10,69 +12,92 @@
 
 /* Apply font family */
 body {
-    font-family: 'Your Selected Font', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Styling headings */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
+/* Header */
+.header {
+    background-color: var(--primary-color); /* Primary color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Adjust as needed */
 }
 
-/* Styling paragraphs */
-p {
-    color: var(--text-color);
-    line-height: 1.5;
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Styling links */
-a {
-    text-decoration: none; /* Remove underlines */
-    color: var(--primary-color);
-}
-
-/* Limit entire width of the page */
-.container {
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center content */
-}
-
-/* Style the hero container */
-.hero {
-    position: relative;
-    width: 100%;
-}
-
-/* Style the hero image */
-.hero img {
-    display: block;
-    width: 100%;
+/* Logo */
+.logo {
+    max-width: 150px; /* Adjust size as needed */
     height: auto;
 }
 
-/* Position the h1 and article elements */
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Example text color */
-    text-align: center; /* Center align text */
+/* Navigation */
+.nav {
+    display: flex;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8); /* Example background color with opacity */
-    padding: 20px; /* Adjust as needed */
-    color: white; /* Example text color */
-    max-width: 80%; /* Adjust as needed */
+/* Navigation Links */
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; /* Adjust spacing */
 }
 
-/* Style the image inside the article */
-.hero article img {
-    float: right;
-    margin-left: 20px; /* Add some space between the image and paragraph */
+/* Adventures Section */
+.adventures-section {
+    padding: 50px 0; /* Adjust spacing */
+}
+
+/* Adventures Container */
+.adventures-container {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+/* Figure */
+.adventures-container figure {
+    margin-right: 20px; /* Adjust spacing between figures */
+}
+
+/* Image */
+.adventures-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Figcaption */
+.adventures-container figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color); /* Primary color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Vertically center items */
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px; /* Adjust spacing between social media icons */
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
 }
