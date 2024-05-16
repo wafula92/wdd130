@@ -9,6 +9,46 @@
     <meta name="author" content="Philip Ongore Wafula">
     <style>
         /* Your CSS styles */
+        header nav {
+            display: flex; /* Use flexbox to display items horizontally */
+            justify-content: space-evenly; /* Evenly distribute space between items */
+            align-items: center; /* Center items vertically within the container */
+        }
+
+        header nav a {
+            display: block; /* Make anchor tags block elements */
+            padding: 10px; /* Add padding */
+            text-decoration: none;
+            color: #333;
+        }
+
+        header nav a:hover {
+            background-color: #f0f0f0; /* Change background color on hover */
+        }
+
+        header h1 {
+            border-bottom: 2px solid #333; /* Add a bottom border to the h1 element */
+        }
+
+        header, footer, .grid {
+            max-width: 840px;
+            margin: 0 auto; /* This centers the content horizontally */
+        }
+
+        .grid {
+            display: grid; /* Use CSS Grid layout */
+            grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+            gap: 20px; /* Gap between grid items */
+        }
+
+        main {
+            grid-column: 2; /* Place main in the second column */
+        }
+
+        aside {
+            grid-column: 1; /* Place aside in the first column */
+        }
+
         .box {
             margin: 10px;
             border: 1px solid #ccc;
@@ -47,6 +87,7 @@
 <body>
     <header>
         <!-- Header content goes here -->
+        <h1>Philip Ongore Wafula | WDD 130</h1>
         <nav>
             <a href="#">Home</a>
             <a href="wwr/">Future Assignment 1</a>
@@ -56,28 +97,29 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Main content goes here -->
-        <h1>Philip Ongore Wafula | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Philip Ongore Wafula Profile" class="profile">
-        <p>I am a passionate web developer with a strong interest in creating engaging and user-friendly websites. I
-            enjoy learning new technologies and constantly improving my skills to deliver high-quality projects. In my
-            free time, I love to explore the outdoors and spend time with friends and family.</p>
-        
-        <!-- Adding the unordered list of favorite temples -->
-        <ul>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/accra-ghana-temple?lang=eng" target="_blank">Accra Ghana Temple</a></li>
-            <li><a href="https://newsroom.churchofjesuschrist.org/topic/temples" target="_blank">Draper Utah Temple</a></li>
-            <li><a href="https://www.templesofthelatterdaysaints.org/" target="_blank">Salt Lake Temple</a></li>
-        </ul>
-    </main>
+    <div class="grid">
+        <aside>
+            <!-- Aside content goes here -->
+            <h2>Kenya</h2>
+            <img src="images/kenya.jpeg" alt="Kenya Landscape">
+            <p>Kenya, situated in East Africa, boasts a diverse and captivating landscape that draws travelers from around the globe. Kenya's geography encompasses a wide array of environments, including expansive savannahs, picturesque lakelands, the striking Great Rift Valley, and towering mountain highlands. This diverse terrain provides a rich tapestry for exploration and adventure. Second Kenya is renowned for its incredible biodiversity and is home to some of the world's most iconic wildlife species. Visitors have the opportunity to encounter majestic lions, graceful elephants, and formidable rhinos in their natural habitats. The country's national parks and reserves offer unparalleled wildlife viewing experiences.Third Nairobi, the bustling capital city, serves as the gateway to Kenya's abundant natural wonders. From here, safari expeditions embark on thrilling journeys to renowned destinations such as the Maasai Mara Reserve. This vast expanse of protected wilderness is famous for its spectacular wildebeest migrations, a spectacle that unfolds annually on the sweeping plains. Fourth the Maasai Mara is not only synonymous with the Great Migration but also offers unrivaled game viewing throughout the year. It is home to a staggering diversity of wildlife, including the Big Five (lion, elephant, buffalo, leopard, and rhinoceros), as well as cheetahs, giraffes, zebras, and more. Visitors can witness thrilling predator-prey interactions and marvel at the sheer beauty of the African savannah. Fifth nestled in the shadow of Tanzania's iconic Mount Kilimanjaro, Amboseli National Park provides a stunning backdrop for wildlife encounters. The park is renowned for its large herds of elephants, which can often be seen against the backdrop of the snow-capped peak. Visitors can enjoy game drives, guided walks, and cultural interactions with the Maasai people, who call this region home.Generaly, Kenya offers a truly immersive and unforgettable safari experience, where travelers can connect with nature in its purest form and witness the wonders of the African wilderness.</p>
+        </aside>
 
-    <aside>
-        <!-- Aside content goes here -->
-        <h2>Kenya</h2>
-        <img src="images/kenya.jpeg" alt="Kenya Landscape">
-        <p>Kenya, situated in East Africa, boasts a diverse and captivating landscape that draws travelers from around the globe. Kenya's geography encompasses a wide array of environments, including expansive savannahs, picturesque lakelands, the striking Great Rift Valley, and towering mountain highlands. This diverse terrain provides a rich tapestry for exploration and adventure. Second Kenya is renowned for its incredible biodiversity and is home to some of the world's most iconic wildlife species. Visitors have the opportunity to encounter majestic lions, graceful elephants, and formidable rhinos in their natural habitats. The country's national parks and reserves offer unparalleled wildlife viewing experiences.Third Nairobi, the bustling capital city, serves as the gateway to Kenya's abundant natural wonders. From here, safari expeditions embark on thrilling journeys to renowned destinations such as the Maasai Mara Reserve. This vast expanse of protected wilderness is famous for its spectacular wildebeest migrations, a spectacle that unfolds annually on the sweeping plains. Fourth the Maasai Mara is not only synonymous with the Great Migration but also offers unrivaled game viewing throughout the year. It is home to a staggering diversity of wildlife, including the Big Five (lion, elephant, buffalo, leopard, and rhinoceros), as well as cheetahs, giraffes, zebras, and more. Visitors can witness thrilling predator-prey interactions and marvel at the sheer beauty of the African savannah. Fifth nestled in the shadow of Tanzania's iconic Mount Kilimanjaro, Amboseli National Park provides a stunning backdrop for wildlife encounters. The park is renowned for its large herds of elephants, which can often be seen against the backdrop of the snow-capped peak. Visitors can enjoy game drives, guided walks, and cultural interactions with the Maasai people, who call this region home.Generaly, Kenya offers a truly immersive and unforgettable safari experience, where travelers can connect with nature in its purest form and witness the wonders of the African wilderness.</p>
-    </aside>
+        <main>
+            <!-- Main content goes here -->
+            <img src="images/profile.jpg" alt="Philip Ongore Wafula Profile" class="profile">
+            <p>I am a passionate web developer with a strong interest in creating engaging and user-friendly websites. I
+                enjoy learning new technologies and constantly improving my skills to deliver high-quality projects. In my
+                free time, I love to explore the outdoors and spend time with friends and family.</p>
+            
+            <!-- Adding the unordered list of favorite temples -->
+            <ul>
+                <li><a href="https://www.churchofjesuschrist.org/temples/details/accra-ghana-temple?lang=eng" target="_blank">Accra Ghana Temple</a></li>
+                <li><a href="https://newsroom.churchofjesuschrist.org/topic/temples" target="_blank">Draper Utah Temple</a></li>
+                <li><a href="https://www.templesofthelatterdaysaints.org/" target="_blank">Salt Lake Temple</a></li>
+            </ul>
+        </main>
+    </div>
 
     <footer>
         <!-- Footer content goes here -->
@@ -90,3 +132,4 @@
 </body>
 
 </html>
+
