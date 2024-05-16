@@ -4,32 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Rafting Company</title>
-    <link rel="stylesheet" href="styles/rafting.css"> <!-- Link to your CSS file -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* CSS code */
         :root {
-            --primary-color: #007bff; /* Example primary color */
-            --secondary-color: #6c757d; /* Example secondary color */
-            --font-family: 'Arial', sans-serif; /* Example font family */
+            --primary-color: #336699; /* Example primary color */
+            --secondary-color: #FFA500; /* Example secondary color */
+            --text-color: #333; /* Example text color */
+            --font-family: 'Roboto', sans-serif; /* Changed font family */
         }
 
-        /* Additional CSS styling can be added here */
-        .container.hero {
+        /* Apply font family */
+        body {
+            font-family: var(--font-family);
+        }
+
+        /* Styling headings */
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* Styling paragraphs */
+        p {
+            color: var(--text-color);
+            line-height: 1.5;
+        }
+
+        /* Styling links */
+        a {
+            text-decoration: none; /* Remove underlines */
+            color: var(--primary-color);
+        }
+
+        /* Limit entire width of the page */
+        .container {
+            max-width: 1200px; /* Adjust as needed */
+            margin: 0 auto; /* Center content */
+        }
+
+        /* Style the hero container */
+        .hero {
             position: relative;
+            width: 100%;
             height: 400px; /* Set a fixed height for the hero section */
         }
 
-        .container.hero h1 {
+        /* Style the hero image */
+        .hero img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Position the h1 and article elements */
+        .hero h1 {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: white; /* Example text color */
+            text-align: center; /* Center align text */
         }
 
-        .container.hero img {
-            float: right; /* Float image to the right */
+        .hero article {
+            position: absolute;
+            bottom: 20px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8); /* Example background color with opacity */
+            padding: 20px; /* Adjust as needed */
+            color: white; /* Example text color */
+            max-width: 80%; /* Adjust as needed */
+        }
+
+        /* Style the image inside the article */
+        .hero article img {
+            float: right;
+            margin-left: 20px; /* Add some space between the image and paragraph */
         }
 
         /* Add styles for social media links */
