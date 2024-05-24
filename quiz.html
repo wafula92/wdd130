@@ -5,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML and CSS Quiz</title>
     <meta name="description" content="Take this quiz to test your knowledge of HTML and CSS.">
-    <meta name="author" content="Philip ongore Wafula">
+    <meta name="author" content="Philip Ongore Wafula">
     <link rel="stylesheet" href="styles/quiz.css">
 </head>
 <body>
     <h1>HTML and CSS Quiz</h1>
     <form action="submit-quiz" method="post">
         <!-- Question 1: Fill in the blank (text input) -->
-        <div>
+        <div class="form-group">
             <label for="q1">1. What does HTML stand for?</label>
             <input type="text" id="q1" name="q1">
         </div>
-        <br>
         
         <!-- Question 2: Short answer (textarea) -->
-        <div>
+        <div class="form-group">
             <label for="q2">2. Explain the purpose of CSS in web development:</label>
             <textarea id="q2" name="q2" rows="4" cols="50"></textarea>
         </div>
-        <br>
 
         <!-- Question 3: Dropdown (select) -->
-        <div>
+        <div class="form-group">
             <label for="q3">3. Which HTML tag is used to define an internal style sheet?</label>
             <select id="q3" name="q3">
                 <option value="" selected disabled>Choose One ...</option>
@@ -35,20 +33,17 @@
                 <option value="link">&lt;link&gt;</option>
             </select>
         </div>
-        <br>
 
         <!-- Question 4: Integer answer (number input) -->
-        <div>
+        <div class="form-group">
             <label for="q4">4. How many levels of headings does HTML support?</label>
             <input type="number" id="q4" name="q4" min="1" max="6">
         </div>
-        <br>
 
         <!-- Submit Button -->
-        <div>
+        <div class="form-group">
             <button type="submit">Submit Quiz</button>
         </div>
     </form>
 </body>
 </html>
-
