@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rafting Company</title>
+    <meta name="description" content="Get in touch with Rafting Company for any inquiries, bookings, or information about our thrilling rafting adventures. We are here to assist you!">
+    <link rel="stylesheet" href="styles/contactus.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container container">
+        <img class="logo" src="images/rafting-momentum.jpg" alt="Rafting Company Logo">
+        <nav class="nav">
+            <a href="https://wafula92.github.io/wdd130/">Home</a>
+            <a href="https://wafula92.github.io/wdd130/wwr/about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Address: 123 Rafting St, Adventure Town, CO 12345</p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <p>Email: <a href="mailto:info@raftingcompany.com">info@raftingcompany.com</a></p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509407!2d144.95373631590626!3d-37.8162797420217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727b2b1706a6b1!2s123+Rafting+St%2C+Adventure+Town%2C+CO+12345!5e0!3m2!1sen!2sus!4v1532565230644" width="600" height="450" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section class="employee-profiles">
+        <h2>Our Team</h2>
+        <div class="profile">
+            <img src="images/employee1.jpg" alt="Employee 1">
+            <figcaption>John Doe - Adventure Guide</figcaption>
+        </div>
+        <div class="profile">
+            <img src="images/employee2.jpg" alt="Employee 2">
+            <figcaption>Jane Smith - Safety Instructor</figcaption>
+        </div>
+        <div class="profile">
+            <img src="images/employee3.jpg" alt="Employee 3">
+            <figcaption>Emily Johnson - Tour Manager</figcaption>
+        </div>
+    </section>
+    
+    <section class="contact-form-section">
+        <h2>Send Us a Message</h2>
+        <form action="submit_form.php" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="purpose">Purpose of Message:</label>
+            <div class="radio-buttons">
+                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                <label for="general">General Inquiry</label>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label>
+            </div>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <div class="checkbox">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Rafting Adventures. Created by Philip Ongore Wafula</p>
+    <a href="#"><img src="images/social_media_icon1.png" alt="Social Media Icon"></a>
+    <a href="#"><img src="images/social_media_icon2.png" alt="Social Media Icon"></a>
+    <a href="#"><img src="images/social_media_icon3.png" alt="Social Media Icon"></a>
+</footer>
+
+</body>
+</html>
