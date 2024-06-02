@@ -69,13 +69,22 @@ body {
 .hero-image {
     width: 300px;
     height: auto;
-    border-bottom: 2px solid #333;
 }
 
 .hero-heading {
     color: #333;
     font-size: 2em;
     margin-top: 10px;
+    position: relative;
+}
+
+.hero-heading::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+    margin: 10px auto 0;
 }
 
 /* Newsletter section */
