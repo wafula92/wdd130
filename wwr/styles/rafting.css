@@ -13,19 +13,19 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 /* Header styles */
 .header {
     background-color: #007BFF;
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -35,13 +35,13 @@ body {
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    gap: 20px;
 }
 
 .nav a {
     color: #fff;
     text-decoration: none;
-    margin-left: 20px;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
@@ -56,41 +56,42 @@ main {
 }
 
 .history-section, .adventures-section {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .history-section h2, .adventures-section h2 {
-    font-size: 1.75em;
-    margin-bottom: 15px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007BFF;
 }
 
 .history-section p, .adventures-section p {
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .adventures-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
 figure {
-    flex: 1 1 calc(33.333% - 20px);
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 figure:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 figure img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 8px;
 }
 
@@ -98,6 +99,7 @@ figcaption {
     text-align: center;
     margin-top: 10px;
     font-weight: bold;
+    color: #007BFF;
 }
 
 /* Footer styles */
